@@ -1,0 +1,19 @@
+Q)Given two strings, determine if they share a common substring. A substring may be as small as one character.Example
+These share the common substring These do not share a substring.
+A1)for j in range(q):
+        for i in range(len(list(s1))):
+            if s1[i] in list(s2):
+                return "YES"
+                break
+        else:
+            return "NO"
+            break
+
+  A2)easy 
+  
+  def twoStrings(s1, s2):
+    if set(s1) & set(s2):
+        return "YES"
+    else:
+        return "NO"
+        
